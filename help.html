@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>FAQ Page</title>
+	<style type="text/css">
+		body{
+			border:2px solid black;
+			border-radius: 13px;
+			margin-left: 250px;
+			margin-right: 250px;
+			font-family: sans-serif;
+		}
+		.hasan {
+			display: grid;
+			width: 98%;
+			grid-template-columns: 50% 50%;
+			grid-auto-rows: minmax(600px, auto);
+			grid-gap: 25px;
+		}
+		.hasan div:nth-child(odd) {
+			border: 2px solid #057EFB;
+			border-radius: 5px;
+			display: grid;
+			grid-template-rows: 95% 5%;
+		}
+		.right h3 button {
+			padding: 3px 6px;
+			margin: 13px;
+			color: white;
+			background-color: #3398FF;
+			border-radius: 8px;
+
+		}
+		input {
+			width: 75%;
+			height: 85%;
+			border-radius: 25px;
+		}
+		#btn {
+			border-radius: 25px;
+			color: skyblue;
+			height: 100%;
+			width: 20%;
+			float: right;
+		}
+		#btn:hover {
+			background-color: skyblue;
+			color: white;
+		}
+		#chatLog{
+			color: #074D95;
+			margin: 8px;
+		}
+		/*.hasan div:nth-child(even) {
+			border: 1px solid red;
+			display: grid;
+			grid-template-rows: 10% 10% 10% 10% 10%;
+		}*/
+		/*.right {
+			border: 1px solid red;
+			display: grid;
+			grid-template-rows: 10% 10% 10% 10% 10%;
+		}*/
+		.hasan div > div {
+			border: 2px solid rgb(6, 6, 7);
+		}
+	</style>
+
+	<script type="text/javascript">
+    level1 = {
+			"hi" : "hello!!",
+			"how are you?" : "I am good",
+			"what you can do?" : "I can help you out with basic instructions",
+			"who are you?" : "&nbsp &nbsp &nbsp &nbsp &nbspI am your friendly bot :)"
+		};
+		level2 = {
+			"I am not able to complete my profile." : "ooh!..Are your details updating to passbook?",
+			"I have problem with my payments" : "Check your passbook again or contact for ligio bank.",
+			"I just forget my password" : "click on forget password and check you mail to change password!"
+		}
+		level21 = {
+			"yes": "okay. You may have problem with database we will work on it :)",
+			"no" : "may be your account was hacked No one can save you but that hacker haha"
+		}
+		level22 = {
+			"thank you its very helpful" : "its good to here from you!!",
+			"you are trash" : "(-_-) sorry, my bad"
+		}
+		level23 = {
+			"you are the best" : ":)"
+		}
+		level211 = {
+			"thank you bot" : "You are Welcome..",
+			"damn it!" : "hahahaha I cant laugh anymore"
+		}
+		var levelcount = 1;
+		function fun() {
+
+			var user = document.getElementById("chatting").value;
+			// var one = document.getElementById("one").value;
+			// var two = document.getElementById("two").value;
+			// var three = document.getElementById("three").value;
+			// var four = document.getElementById("four").value;
+			document.getElementById("chatting").value = "";
+			document.getElementById("chatLog").innerHTML += user+"<br>";
+			if(user in level1 && levelcount==1) {
+				document.getElementById("chatLog").innerHTML += "BOT:-"+ level1[user] + "<br>"+"YOU:-...";
+
+				document.getElementById("one").innerHTML = document.getElementById("one").value = "I am not able to complete my profile.";
+
+				// console.log(document.getElementById("one").value);
+				document.getElementById("two").innerHTML = document.getElementById("two").value = "I have problem with my payments";
+				document.getElementById("three").innerHTML = document.getElementById("three").value = "I just forget my password";
+				document.getElementById("four").innerHTML = document.getElementById("four").value = "-";
+				levelcount ++;
+			}
+			else if(user in level2 && levelcount==2) {
+				if(user == "I am not able to complete my profile.") {
+					// document.getElementById("instructions").innerHTML ="yes<br><br>no";
+					document.getElementById("one").innerHTML = document.getElementById("one").value = "yes";
+					document.getElementById("two").innerHTML = document.getElementById("two").value = "no";
+					document.getElementById("three").innerHTML = document.getElementById("three").value = "-";
+					document.getElementById("four").innerHTML = document.getElementById("four").value = "-";
+				}
+				else if(user == "I have problem with my payments") {
+					// document.getElementById("instructions").innerHTML ="thank you its very helpful<br><br>you are trash";
+					document.getElementById("one").innerHTML = document.getElementById("one").value = "thank you its very helpful";
+					document.getElementById("two").innerHTML = document.getElementById("two").value = "you are trash";
+					document.getElementById("three").innerHTML = document.getElementById("three").value = "-";
+					document.getElementById("four").innerHTML = document.getElementById("four").value = "-";
+				}
+				else if(user == "I just forget my password") {
+					// document.getElementById("instructions").innerHTML ="thank you";
+					document.getElementById("one").innerHTML = document.getElementById("one").value = "you are the best";
+					document.getElementById("two").innerHTML = document.getElementById("two").value = "-";
+					document.getElementById("three").innerHTML = document.getElementById("three").value = "-";
+					document.getElementById("four").innerHTML = document.getElementById("four").value = "-";
+				}
+				document.getElementById("chatLog").innerHTML += "BOT:-"+ level2[user] + "<br>"+"YOU:-...";
+				// document.getElementById("instructions").innerHTML ="I am not able to complete my profile.<br><br>I have problem with my payments<br><br>I just forget my password<br><br>";
+				levelcount ++;
+			}
+			else if(user in level21 && levelcount==3) {
+				if(user == "yes") {
+					// document.getElementById("instructions").innerHTML = "thank you bot";
+					document.getElementById("one").innerHTML = document.getElementById("one").value = "thank you bot";
+					document.getElementById("two").innerHTML = document.getElementById("two").value = "-";
+					document.getElementById("three").innerHTML = document.getElementById("three").value = "-";
+					document.getElementById("four").innerHTML = document.getElementById("four").value = "-";
+				}
+				else if(user == "no") {
+					document.getElementById("one").innerHTML = document.getElementById("one").value = "damn it!";
+					document.getElementById("two").innerHTML = document.getElementById("two").value = "-";
+					document.getElementById("three").innerHTML = document.getElementById("three").value = "-";
+					document.getElementById("four").innerHTML = document.getElementById("four").value = "-";
+				}
+				document.getElementById("chatLog").innerHTML += "BOT:-"+ level21[user] + "<br>"+"YOU:-...";
+				levelcount++;
+			}
+			else if(user in level22 && levelcount==3) {
+				if(user == "thank you its very helpful") {
+					document.getElementById("one").innerHTML = document.getElementById("one").value = "you can exit now";
+					document.getElementById("two").innerHTML = document.getElementById("two").value = "-";
+					document.getElementById("three").innerHTML = document.getElementById("three").value = "-";
+					document.getElementById("four").innerHTML = document.getElementById("four").value = "-";
+				}
+				else if(user == "you are trash") {
+					document.getElementById("one").innerHTML = document.getElementById("one").value = "nothing to show here you can quit!";
+					document.getElementById("two").innerHTML = document.getElementById("two").value = "-";
+					document.getElementById("three").innerHTML = document.getElementById("three").value = "-";
+					document.getElementById("four").innerHTML = document.getElementById("four").value = "-";
+				}
+				document.getElementById("chatLog").innerHTML += "BOT:-"+ level22[user] + "<br>"+"YOU:-...";
+				levelcount++;
+			}
+			else if(user in level23 && levelcount==3) {
+				if(user == "you are the best") {
+					document.getElementById("one").innerHTML = document.getElementById("one").value = "Bot: Thank you for visiting. TC";
+					document.getElementById("two").innerHTML = document.getElementById("two").value = "-";
+					document.getElementById("three").innerHTML = document.getElementById("three").value = "-";
+					document.getElementById("four").innerHTML = document.getElementById("four").value = "-";
+				}
+				document.getElementById("chatLog").innerHTML += "BOT:-"+ level23[user] + "<br>"+"YOU:-...";
+				levelcount++;
+			}
+			else if(user in level211 && levelcount==4) {
+				if(user == "thank you bot") {
+					document.getElementById("one").innerHTML = document.getElementById("one").value = "Bot: I am always happy to help you";
+					document.getElementById("two").innerHTML = document.getElementById("two").value = "-";
+					document.getElementById("three").innerHTML = document.getElementById("three").value = "-";
+					document.getElementById("four").innerHTML = document.getElementById("four").value = "-";
+				}
+				else if(user == "damn it!") {
+					document.getElementById("one").innerHTML = document.getElementById("one").value = "Bot:Hello I am here... You Better Exit dude!";
+					document.getElementById("two").innerHTML = document.getElementById("two").value = "-";
+					document.getElementById("three").innerHTML = document.getElementById("three").value = "-";
+					document.getElementById("four").innerHTML = document.getElementById("four").value = "-";
+				}
+				document.getElementById("chatLog").innerHTML += "BOT:-"+ level211[user] + "<br>"+"YOU:-...";
+				levelcount++;
+			}
+			else {
+				document.getElementById("chatLog").innerHTML += "What was that? <br>";
+				console.log(levelcount);
+			}
+
+		}
+
+		function hasan(prakash) {
+			document.getElementById("chatting").value = prakash;
+		}
+		function thor(sri) {
+			document.getElementById("chatting").value = document.getElementById(sri).value;
+		}
+
+
+
+
+
+	</script>
+</head>
+<body>
+
+	<div class="hasan">
+		<div>
+			<div id="chatLog">YOU:-</div>
+			<div><input id="chatting" type="text" name="" placeholder="Enter msg..">
+				<button id="btn" type="submit" onclick="fun()">send</button>
+			</div>
+		</div>
+		<div class="right">
+			<h3 id="instructions">
+				<button id="one" onclick="thor(this.id)" value="hi" style="width: 80%">hi</button>
+				<button id="two" onclick="thor(this.id)" value="how are you?" style="width: 80%">how are you?</button>
+				<button id="three" onclick="thor(this.id)" value="what you can do?" style="width: 80%">what you can do?</button>
+				<button id="four" onclick="thor(this.id)" value="who are you?" style="width: 80%">who are you?</button></h3>
+		</div>
+	</div>
+
+</body>
+</html>

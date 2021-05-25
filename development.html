@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Development Page</title>
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    {% load static %}
+    <title> {% block title %}Home{% endblock %}</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/all.css' %}">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'css/responsive.css' %}">
+    <link rel="stylesheet" href="{% static 'css/custom.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+</head>
+<body>
+{% csrf_token %}
+<header class="main-header">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light navbar-default bootsnav">
+        <div class="container">
+            <div class="navbar-header">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-menu"
+                        aria-controls="navbars-rs-food" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fa fa-bars"></i>
+                </button>
+                <a class="navbar-brand" href=""><img src="{% static 'images/logo.png' %}" class="logo" alt="" height="2opx"></a>
+            </div>
+
+            <div class="collapse navbar-collapse" id="navbar-menu">
+                <ul class="nav navbar-nav ml-auto" data-in="fadeInDown" data-out="fadeOutUp">
+                    <li class="nav-item active"><a class="nav-link" href ="{% url 'homepage' %}">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="{% url 'about' %}">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="{% url 'contact' %}">Contact Us</a></li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+
+            <!-- Start Atribute Navigation -->
+            <div class="attr-nav">
+                <ul>
+                    <li class="search"><a href="#"><i class="fa fa-search"></i></a></li>
+
+                </ul>
+            </div>
+            <!-- End Atribute Navigation -->
+        </div>
+
+    </nav>
+    <!-- End Navigation -->
+</header>
+<!-- End Main Top -->
+
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="banner-frame"><img class="img-fluid" src="{% static 'images/1.jfif' %}" alt="" height="1980px" width="4000px"/>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <h2 class="noo-sh-title-top">Development <span> 1</span></h2>
+              <p>Organic food is food produced by methods complying with the standards of organic farming. Standards vary worldwide, but organic farming features practices that cycle resources, promote ecological balance, and conserve biodiversity. Organizations regulating organic products may restrict the use of certain pesticides and fertilizers in the farming methods used to produce such products. Organic foods typically are not processed using irradiation, industrial solvents, or synthetic food additives</p>
+             <br>
+            <a href="http://127.0.0.1:8000/details/"><button>Register</button></a>
+            </div>
+
+        </div>
+
+        <br>
+        <br>
+        <br>
+  <div class="container">
+      <div class = "row">
+
+  </div>
+
+
+
+        <div class="container">
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="banner-frame"><img class="img-fluid" src="{% static 'images/2.jfif' %}" alt=""/>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <h2 class="noo-sh-title-top">Development<span> 2</span></h2>
+                <h3>(a) Pure organic farming –</h3>
+                <p>In pure organic farming, there is avoiding every unnatural chemical. In the process of pure farming, fertilizer and pesticides obtain from natural sources. It is called a pure form of organic farming.</p>
+            <h3>(b) Integrated organic farming –</h3>
+                <p> Integrated organic farming consists of integrated nutrients management and integrated pest management.</p>
+             <br>
+            <a href="http://127.0.0.1:8000/details/"><button>Register</button></a>
+            </div>
+
+        </div>
+<br>
+            <br>
+            <br>
+        <div class="container">
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="banner-frame"><img class="img-fluid" src="{% static 'images/3.jfif' %}" alt=""/>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <h2 class="noo-sh-title-top">Development<span> 3</span></h2>
+                <p>Organic agriculture grows and develops with these principles. These can contribute to improving organic agriculture for the world.</p>
+                <h3>(a) Principles of Health</h3>
+                <p> The health of the ecosystem, people, and communities.</p>
+            <h3>(b) Principles of Ecology –</h3>
+                 <p> The right balance between ecosystem and environment or nature. </p>
+            <h3>(c) Principles of  Fairness –</h3>
+                <p>Good human relationships and quality of life. </p>
+                <h3>(d) Principles of  Care –</h3>
+                <p>The considerations about the environment and environment of the future. </p>
+             <br>
+            <a href="http://127.0.0.1:8000/details/"><button>Register</button></a>
+
+            </div>
+
+        </div>
+            <br>
+            <br>
+            <br>
+             <div class="container">
+        <div class="row">
+            <div class="col-lg-6">
+
+                <div class="banner-frame"><img class="img-fluid" src="{% static 'images/4.jfif' %}" alt=""/>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <h2 class="noo-sh-title-top">Development<span> 4</span></h2>
+                <p>In India, approx 2.78 million hectare area is covered by organic agriculture. Some major organic products grown in India are oilseeds, tea, coffee, dried fruits, millets, cereals, spices, etc. These products are highly produced in India and exported by India. Sikkim, Uttarakhand, and Tripura are the major states to cultivate organic products in India. Other states for organic farming are Madhya Pradesh, Rajasthan and Maharashtra. </p>
+                 <br>
+            <a href="http://127.0.0.1:8000/details/"><button>Register</button></a>
+            </div>
+
+        </div>
+                 <br>
+                 <br>
+                 <br>
+                      <div class="container">
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="banner-frame"><img class="img-fluid" src="{% static 'images/5.jfif' %}" alt=""/>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                 <h2 class="noo-sh-title-top">Development <span> 5</span></h2>
+                <br>
+              <p>Organic farming has mushroomed drastically in importance and influence worldwide from its modest beginnings in the first half of the last century. Organic farming is production of food and livestock without the use of herbicides, pesticides, weedicides, fertilizers or genetically modified organism and use natural resources such as manure and compost instead. In other words, it is a production system which maintains the quality of soil ecosystem as well as human beings. The chemicals were not used for farming before World War 2. A number of munitions used in farming have contributed to field of agriculture. For instance, ammonium nitrate used as ammonium nitrate fertilizer.</p>
+                  <h2 class="noo-sh-title-top">Reduced <span> Pollution</span></h2>
+             <p> Organic farming has environmental benefits that reduce pollution. “The environmental benefits attributable to reduced chemical inputs, less soil erosion, water conservation, and improved soil organic matter and biodiversity were consistently greater in the organic systems than in the conventional systems” (Pimentel, Hepperly, Hanson, Douds, & Seidel, 2005, p 579). Organic farming focuses on enriching the soil with natural additives. Because of the healthier soil, organic farming reduces runoff and therefore creates a lower risk of polluting waterways. The absence of harmful pesticide and fertilizer sprays result in a cleaner atmosphere.</p>
+                <h2 class="noo-sh-title-top">Lower Energy <span> Use</span></h2>
+                <p>Another environmental benefit of organic farming is the reduction of energy use. Some popular crops such as corn require nitrogen rich soil which is a high energy use product if farmed in conventional ways. Conventional farming achieves this by heavily spraying with nitrogen rich fertilizers. Energy calculations begin with the manufacture and transportation of these products. In addition, the use of equipment for repeated applications of the less effective fertilizer result in an overall higher energy need than that of organic farming. Organic farming achieves the nitrogen rich soil, instead, by using composted manure and the use of cover crops.</p>
+             <br>
+            <a href="http://127.0.0.1:8000/details/"><button>Register</button></a>
+            </div>
+
+        </div>
+                          <br>
+                          <br>
+                          <br>
+
+<!-- Start Top Search -->
+<div class="top-search">
+    <div class="container">
+        <div class="input-group">
+            <span class="input-group-addon"><i class="fa fa-search"></i></span>
+            <input type="text" class="form-control" placeholder="Search">
+            <span class="input-group-addon close-search"><i class="fa fa-times"></i></span>
+        </div>
+    </div>
+</div>
+<div class="instagram-box">
+    <div class="main-instagram owl-carousel owl-theme">
+        <div class="item">
+            <div class="ins-inner-box">
+                <img src="{% static 'images/7.jfif'%}" alt=""/>
+                <div class="hov-in">
+                    <a href="http://127.0.0.1:8000/shop"><i></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <div class="ins-inner-box">
+                <img src="{% static 'images/8.jfif' %}" alt=""/>
+                <div class="hov-in">
+                    <a href="http://127.0.0.1:8000/shop"><i></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <div class="ins-inner-box">
+                <img src="{% static 'images/9.jfif'%}" alt=""/>
+                <div class="hov-in">
+                    <a href="http://127.0.0.1:8000/shop"><i></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <div class="ins-inner-box">
+                <img src="{% static 'images/10.jfif'%}" alt=""/>
+                <div class="hov-in">
+                    <a href="http://127.0.0.1:8000/shop"><i></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <div class="ins-inner-box">
+                <img src="{% static 'images/11.jfif'%}" alt=""/>
+                <div class="hov-in">
+                    <a href="http://127.0.0.1:8000/shop"><i></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <div class="ins-inner-box">
+                <img src="{% static 'images/12.jfif'%}" alt=""/>
+                <div class="hov-in">
+                    <a href="http://127.0.0.1:8000/shop"><i></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <div class="ins-inner-box">
+                <img src="{% static 'images/13.jfif'%}" alt=""/>
+                <div class="hov-in">
+                    <a href="http://127.0.0.1:8000/shop"><i></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <div class="ins-inner-box">
+                <img src="{% static 'images/2.jfif'%}" alt=""/>
+                <div class="hov-in">
+                    <a href="http://127.0.0.1:8000/shop"><i></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <div class="ins-inner-box">
+                <img src="{% static 'images/3.jfif'%}" alt=""/>
+                <div class="hov-in">
+                    <a href="http://127.0.0.1:8000/shop"><i></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <div class="ins-inner-box">
+                <img src="{% static 'images/5.jfif'%}" alt=""/>
+                <div class="hov-in">
+                    <a href="http://127.0.0.1:8000/shop"><i></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End Instagram Feed  -->
+
+
+<!-- Start Footer  -->
+<footer>
+    <div class="footer-main">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-12 col-sm-12">
+                    <div class="footer-top-box">
+                        <h3>Business Time</h3>
+                        <ul class="list-time">
+                            <li>Monday - Friday: 08.00am to 05.00pm</li>
+                            <li>Saturday: 10.00am to 08.00pm</li>
+                            <li>Sunday: <span>Closed</span></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-12 col-sm-12">
+                    <div class="footer-top-box">
+                        <h3>Newsletter</h3>
+                        <form class="newsletter-box">
+                            <div class="form-group">
+                                <input class="" type="email" name="Email" placeholder="Email Address*"/>
+                                <i class="fa fa-envelope"></i>
+                            </div>
+                            <button class="btn hvr-hover" type="submit">Submit</button>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-12 col-sm-12">
+                    <div class="footer-top-box">
+                        <h3>Social Media</h3>
+                        <p>Follow us on:</p>
+                        <ul>
+                            <li><a href="#"><i class="fab fa-facebook" aria-hidden="true"></i></a></li>
+                            <li><a href="#"><i class="fab fa-linkedin" aria-hidden="true"></i></a></li>
+                            <li><a href="#"><i class="fab fa-google-plus" aria-hidden="true"></i></a></li>
+                            <li><a href="#"><i class="fab fa-whatsapp" aria-hidden="true"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="row">
+                <div class="col-lg-4 col-md-12 col-sm-12">
+                    <div class="footer-widget">
+                        <h4>About HomeX</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                            laboris nisi ut aliquip ex ea commodo consequat.</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. </p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-12 col-sm-12">
+                    <div class="footer-link">
+                        <h4>Information</h4>
+                        <ul>
+                            <li><a href="{% url 'about'%}">About Us</a></li>
+                            <li><a href="#">Customer Service</a></li>
+                            <li><a href="#">Our Sitemap</a></li>
+                            <li><a href="#">Terms &amp; Conditions</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Delivery Information</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-12 col-sm-12">
+                    <div class="footer-link-contact">
+                        <h4>Contact Us</h4>
+                        <ul>
+                            <li>
+                                <p><i class="fas fa-map-marker-alt"></i>Address: Green Fields <br>Vaddeswaram,<br> near K L University </p>
+                            </li>
+                            <li>
+                                <p><i class="fas fa-phone-square"></i>Phone: <a href="tel:+1-888705770">+91 7032172001</a></p>
+                            </li>
+                            <li>
+                                <p><i class="fas fa-envelope"></i>Email: <a href="homeX@gmail.com">homeX@gmail.com</a>
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- End Footer  -->
+
+<!-- Start copyright  -->
+<div class="footer-copyright">
+    <p class="footer-company">All Rights Reserved. &copy; 2021  Design By SDP Batch 178
+        <a href="https://html.design/">html design</a></p>
+</div>
+<!-- End copyright  -->
+
+<a href="#" id="back-to-top" title="Back to top" style="display: none;">&uarr;</a>
+
+<!-- ALL JS FILES -->
+<script src="{% static 'js/jquery-3.2.1.min.js'%}"></script>
+<script src="{% static 'js/popper.min.js'%}"></script>
+<script src="{% static 'js/bootstrap.min.js'%}"></script>
+<!-- ALL PLUGINS -->
+<script src="{% static 'js/jquery.superslides.min.js'%}"></script>
+<script src="{% static 'js/bootstrap-select.js'%}"></script>
+<script src="{% static 'js/inewsticker.js'%}"></script>
+<script src="{% static 'js/bootsnav.js'%}"></script>
+<script src="{% static 'js/images-loded.min.js'%}"></script>
+<script src="{% static 'js/isotope.min.js'%}"></script>
+<script src="{% static 'js/owl.carousel.min.js'%}"></script>
+<script src="{% static 'js/baguetteBox.min.js'%}"></script>
+<script src="{% static 'js/form-validator.min.js'%}"></script>
+<script src="{% static 'js/contact-form-script.js'%}"></script>
+<script src="{% static 'js/custom.js'%}"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+        crossorigin="anonymous"></script>
+</body>
+</html>

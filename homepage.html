@@ -1,0 +1,135 @@
+{% load static %}
+<!DOCTYPE html>
+  <html>
+  <head>
+      <title>Home Page</title>
+    <script src="https://kit.fontawesome.com/228a3cf7d7.js" crossorigin="anonymous"></script>
+  <style>
+    h2{
+  text-align:center;
+  background-color:blue;
+}
+  * {
+    box-sizing: border-box;
+  }
+  .img
+  {
+  border-radius:8px;
+  border:3px solid #ddd;
+  border-color:tomato;
+  border-radius:60px;
+  border-spacing:10px;
+  float:left;
+  margin:5px;
+  padding:30px;
+  
+  }
+  .decription::after
+  {
+      padding:10px;
+       background-color: greenyellow;
+        text-align: center;
+  }
+  
+  .column {
+    float: left;
+    width: 33.33%;
+    padding: 2px;
+  }
+  
+  /* Clearfix (clear floats) */
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+    padding: 100px;
+  }
+  .sam{
+    float: center;
+   padding-left:250px;
+  }
+  .space{
+    float : center;
+    padding-left: 250px;
+  }
+  .help{
+    float:right;
+    padding-left: 100px;
+  }
+  </style>
+  </head>
+  <body>
+  <nav style="text-align: center;"><h1>REAL ESTATE MANAGEMENT SYSTEM</h1></nav>
+  <div class="sam">
+    <img src="{%static '/images/pl.jpg'%}" width="1100px" height="500px">
+  </div>
+  
+  <div class="space">
+  <div class="row">
+    <div class="column">
+      <div class="img">
+      <img src="{%static '/images/hp1.jpg'%}"  width="340px" height="500">
+       <div class="description" >
+        <div style="text-align: center;">
+      <a href="http://127.0.0.1:8000/land/"> <button>LAND</button></a>
+      </div>
+      </div>
+    </div>
+    </div>
+    <div class="column">
+      <div class="img">
+      <img src="{%static '/images/hp2.jpg'%}" width="350px" height="500">
+       <div class="description" >
+         <div style="text-align: center;">
+        <a href="http://127.0.0.1:8000/industrial/"> <button>INDUSTRIAL</button></a>
+      </div>
+       </div>
+    </div>
+    </div>
+    <div class="column">
+      <div class="img">
+      <img src="{%static '/images/hp33.jpg'%}" width="350px" height="500">
+      <div class="description" >
+        <div style="text-align: center;">
+        <a href="http://127.0.0.1:8000/commercial/"> <button > COMMERCIAL </button></a>
+        </div>
+        </div>
+      </div>
+    </div>
+    <div class="column">
+      <div class="img">
+      <img src="{%static '/images/hp4.jpg'%}" width="340px" height="500">
+      <div class="description" >
+        <div style="text-align: center;">
+        <a href="http://127.0.0.1:8000/development/"> <button >DEVELOPMENT</button></a>
+        </div>
+        </div>
+      </div>
+    </div>
+    <div class="column">
+      <div class="img">
+      <img src="{%static '/images/hp5.jpg'%}" width="350px" height="500">
+      <div class="description" >
+        <div style="text-align: center;">
+        <a href="http://127.0.0.1:8000/property_management/"> <button > POPERTY MANAGEMENT</button></a>
+        </div>
+        </div>
+      </div>
+    </div>
+    <div class="column">
+      <div class="img">
+      <img src="{%static '/images/hp6.jpg'%}" width="350px" height="500">
+      <div class="description" >
+        <div style="text-align: center;">
+        <a href="http://127.0.0.1:8000/villa/"> <button > VILLA </button></a>
+        </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+  </div>
+  </body>
+  </html>
+  
+  
